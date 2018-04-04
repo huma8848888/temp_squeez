@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#eeeeee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <View
+        android:id="@+id/tit_tt"
+        android:layout_height="30dp"
+        android:layout_width="fill_parent"/>
+    <TextView
+        android:id="@+id/tit_sy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="33sp"
+        android:layout_below="@+id/tit_tt"
+        android:text="时域图："
+        />
+    <LinearLayout
+        android:id="@+id/sychart"
+        android:layout_width="fill_parent"
+        android:layout_height="166dp"
+        android:layout_below="@+id/tit_sy"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tit_pp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sychart"
+        android:textSize="33sp"
+        android:text="频谱图："
+        />
+    <LinearLayout
+        android:id="@+id/ppchart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tit_pp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+
+</RelativeLayout>
